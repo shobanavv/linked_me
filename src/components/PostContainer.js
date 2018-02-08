@@ -1,17 +1,19 @@
 import React from 'react';
-import StyleList from './StyleList';
+import StyledList from './StyleList';
+
 
 
 
 function PostContainer(props) {
-
     return (
-        <StyleList>
-        <img className="App-image" alt="coffee" src={props.obj.imageUrl} />
-        <p> {props.obj.username}</p>
-        <p>{props.obj.College}</p>
-        <p>{props.obj.Degree}</p>
-        </StyleList>
+        <StyledList>
+          <li>
+            <img className="App-image" src={props.obj.imageUrl}/>
+            <p>{props.obj.username}</p>
+            <p>{props.obj.College}</p>
+            <p>{props.obj.Degree}</p>
+          </li>
+        </StyledList>
         )
 }
 export default PostContainer;

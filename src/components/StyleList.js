@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
-const StyledList = styled.div` {
-  justify-content: space-between;
+const StyledList = styled.li`
+  display: inline-flex;
+  width:25%;
   border: 2px solid black;
-  display:inline-block;
-  background-color: #ddd;
-  width: 20%;
-  height: 30%;
-  margin: 5px;
+  background: #ddd;
+  font-size: 2rem;
+   
+  p{
+    
+  }
+`;
 
-}`;
 
 export default StyledList;
